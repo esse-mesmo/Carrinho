@@ -38,12 +38,22 @@ void loop() {
         digitalWrite(VMB, 255);
       break;
       
-      case 'R':
-        viraDireita();
+      case 'R': //direita
+        digitalWrite(M1A, HIGH);
+        digitalWrite(M2A, LOW); 
+        digitalWrite(VMA, 255); 
+        digitalWrite(M1B, LOW);
+        digitalWrite(M2B, HIGH);
+        digitalWrite(VMB, 255);
       break;
         
-      case 'L':
-        viraEsquerda();
+      case 'L': //esquerda
+        digitalWrite(M1A, LOW);
+        digitalWrite(M2A, HIGH); 
+        digitalWrite(VMA, 255); 
+        digitalWrite(M1B, HIGH);
+        digitalWrite(M2B, LOW);
+        digitalWrite(VMB, 255);
       break;
         
       case 'S':
