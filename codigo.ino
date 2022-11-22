@@ -56,8 +56,9 @@ void loop() {
         digitalWrite(VMB, 255);
       break;
         
-      case 'S':
-        para();
+      case 'S': //parar
+        digitalWrite(VMA, 0);
+        digitalWrite(VMB, 0);
       break;
     }
   }
